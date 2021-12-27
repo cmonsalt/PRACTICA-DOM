@@ -1,6 +1,9 @@
 import scrollTopButton from "./boton_scroll.js";
 import countdown from "./cuenta_regresiva.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import networkStatus from "./deteccion_red.js";
+import webCam from "./deteccion_webcam.js";
+import getGeolocation from "./geolocalizacion.js";
 import hamburguerMenu from "./menu_hamburguesa.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
@@ -31,6 +34,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
+
+  webCam("webcam");
+
+  getGeolocation("geolocation");
 });
 
 d.addEventListener("keydown", (e) => {
@@ -38,3 +45,4 @@ d.addEventListener("keydown", (e) => {
 });
 
 darkTheme(".dark-theme-btn", "dark-mode");
+networkStatus();
