@@ -14,6 +14,7 @@ import scrollSpy from "./scroll_espia.js";
 import drow from "./sorteo.js";
 import { moveBall } from "./teclado.js";
 import darkTheme from "./tema_oscuro.js";
+import smartVideo from "./video_inteligente.js";
 
 const d = document;
 
@@ -47,6 +48,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   slider();
   scrollSpy();
+  smartVideo();
 });
 
 d.addEventListener("keydown", (e) => {

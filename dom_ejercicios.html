@@ -35,6 +35,8 @@
       <a href="#seccion10" data-scroll-spy>Filtros de Búsquedas</a>
       <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
       <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
+      <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
+      <a href="#seccion14" data-scroll-spy>Validaciones de Formulario</a>
     </nav>
   </aside>
 
@@ -168,6 +170,30 @@
           <a class="next" href="#">&raquo;</a>
         </div>
       </div>
+    </section>
+    <section id="seccion13" class="section" data-scroll-spy>
+      <h2>Video Inteligente</h2>
+      <video src="assets/Video de motivación corto.mp4" controls muted loop data-smart-video></video>
+    </section>
+    <section id="seccion14" class="section" data-scroll-spy>
+      <h2>Validaciones de Formulario</h2>
+      <form class="contact-form">
+        <legend>Envianos Tus Comentarios</legend>
+        <input type="text" name="name" placeholder="Escribe tu nombre"
+          title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <input type="email" name="email" placeholder="Escribe tu email" title="Email invalido"
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="subject" placeholder="Asunto" title="El asunto es requerido" required>
+        <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios..."
+          title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$"></textarea>
+        <input type="submit" value="Enviar">
+        <div class="contact-form-loader none">
+          <img src="assets/loader.svg" alt="">
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados</p>
+        </div>
+      </form>
     </section>
   </main>
 
