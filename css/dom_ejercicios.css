@@ -468,12 +468,12 @@ video {
   animation: show-message 1s 1 normal 0s ease-out both;
 }
 
-.none {
-  display: none;
+.contact-form-loader {
+  margin-top: -10rem;
 }
 
-.none img {
-  width: 10%;
+.none {
+  display: none;
 }
 
 @keyframes show-message {

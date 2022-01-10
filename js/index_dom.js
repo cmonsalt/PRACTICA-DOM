@@ -14,6 +14,7 @@ import scrollSpy from "./scroll_espia.js";
 import drow from "./sorteo.js";
 import { moveBall } from "./teclado.js";
 import darkTheme from "./tema_oscuro.js";
+import contactFormValidations from "./validaciones_formulario.js";
 import smartVideo from "./video_inteligente.js";
 
 const d = document;
@@ -22,7 +23,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburguerMenu(".panel-btn", ".panel", ".menu a");
   digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
   alarm("assets/alarm-clock.mp3", "#activar-alarma", "#desactivar-alarma");
-  countdown("countdown", "Dec 24, 2021 20:46", "Feliz Navidad");
+  countdown("countdown", "Dec 24, 2022 20:46", "Feliz Navidad");
   scrollTopButton(".scroll-top-btn");
   responsiveMedia(
     "youtube",
@@ -49,6 +50,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   slider();
   scrollSpy();
   smartVideo();
+  contactFormValidations();
 });
 
 d.addEventListener("keydown", (e) => {
